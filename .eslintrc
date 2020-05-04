@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "plugins": ["import"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["warn", "single"],
+    "linebreak-style": [1, "unix"],
+    "no-unused-vars": "warn",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": 1,
+    "react/prop-types": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./src/"]
+        ]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}
