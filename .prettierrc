@@ -3,7 +3,6 @@
   "trailingComma": "all",
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
-  "parser": "typescript",
   "jsxSingleQuote": true,
   "printWidth": 80,
   "semi": true,
