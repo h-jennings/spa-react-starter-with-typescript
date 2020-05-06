@@ -16,16 +16,17 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": [
-    "./src/**/*"
-  ],
+  "include": ["./src/**/*"],
   "exclude": [
     "./dist",
     "./config",
     "node_modules",
     "build",
     "scripts",
-    "webpack",
+    "webpack"
   ]
 }

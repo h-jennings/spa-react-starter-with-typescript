@@ -2,16 +2,16 @@
   font-family: 'Basier Circle';
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/basiercircle-regular.woff2") format("woff2"),
-    url("../../fonts/basiercircle-regular.woff") format("woff");
+  src: url('../../fonts/basiercircle-regular.woff2') format('woff2'),
+    url('../../fonts/basiercircle-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Basier Circle';
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/basiercircle-bold.woff2") format("woff2"),
-    url("../../fonts/basiercircle-bold.woff") format("woff");
+  src: url('../../fonts/basiercircle-bold.woff2') format('woff2'),
+    url('../../fonts/basiercircle-bold.woff') format('woff');
 }
 
 :root {

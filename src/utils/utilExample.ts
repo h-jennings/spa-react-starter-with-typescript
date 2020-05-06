@@ -1,5 +1,3 @@
-function utilExample() {
+export function utilExample() {
   return console.log('Hello World!');
 }
-
-export default utilExample;

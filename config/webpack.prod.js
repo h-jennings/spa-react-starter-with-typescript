@@ -24,7 +24,19 @@ const configureProductionSassLoader = () => ({
       },
     },
     'postcss-loader',
-    'sass-loader',
+    {
+      loader: 'resolve-url-loader',
+      options: {
+        sourceMap: true,
+        debug: true,
+      },
+    },
+    {
+      loader: 'sass-loader',
+      options: {
+        webpackImporter: true,
+      },
+    },
   ],
 });
 

@@ -29,9 +29,17 @@ const configureSassLoader = () => ({
       },
     },
     {
+      loader: 'resolve-url-loader',
+      options: {
+        sourceMap: true,
+        debug: true,
+      },
+    },
+    {
       loader: 'sass-loader',
       options: {
         sourceMap: true,
+        webpackImporter: true,
       },
     },
   ],

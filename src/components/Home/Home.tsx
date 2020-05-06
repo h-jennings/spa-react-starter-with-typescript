@@ -1,8 +1,8 @@
 import React from 'react';
-import sharedStyles from '../../scss/shared/shared.module.scss';
+import sharedStyles from '@/scss/shared/shared.module.scss';
 import styles from './Home.module.scss';
 import Navigation from '../Navigation/Navigation';
-import reactLogo from '../../images/react.svg';
+import reactLogo from '@/images/react.svg';
 
 function Home() {
   return (

@@ -52,6 +52,7 @@ const configureFontLoader = () => ({
   loader: 'url-loader',
   options: {
     limit: 8192,
+    outputPath: 'assets/',
     name: '[path][name].[ext]',
     context: 'src', // prevent display of src/ in filename
   },
@@ -63,6 +64,12 @@ module.exports = {
     path: paths.build,
     filename: '[name].bundle.js',
     publicPath: '/',
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      '@': paths.src,
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
